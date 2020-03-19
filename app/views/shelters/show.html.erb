@@ -1,5 +1,7 @@
-<a href='/shelters'>All Shelters</a>
+<button onclick="location.href='/shelters'" type="button">All Shelters</button>
 
 <h1><%= @shelter.name %></h1>
 <p><%= @shelter.address %></p>
 <p><%= @shelter.city %>, <%= @shelter.state %> <%= @shelter.zip %></p>
+
+<button onclick="location.href='/shelters/<%= @shelter.id %>/edit'" type="button">Edit</button>
