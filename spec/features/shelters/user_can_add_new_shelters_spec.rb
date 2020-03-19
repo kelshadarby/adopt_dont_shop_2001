@@ -28,8 +28,6 @@ RSpec.describe "shelters index page", type: :feature do
     page.fill_in 'Zip', with: '87571'
     click_button 'Create Shelter'
 
-    visit "/shelters"
-
     expect(page).to have_content('Stray Hearts Taos Animal Shelter')
     expect(page).to have_content(shelter_1.name)
     expect(page).to have_content(shelter_2.name)
