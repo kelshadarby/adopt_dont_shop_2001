@@ -13,13 +13,22 @@ RSpec.describe "shelters index page", type: :feature do
                                state: "CO",
                                zip: "80301")
 
-    visit "/shelters"
+    visit "/shelters/new"
+
+    expect(page).to have_field('Name')
+    expect(page).to have_field('Address')
+    expect(page).to have_field('City')
+    expect(page).to have_field('State')
+    expect(page).to have_field('Zip')
 
     page.fill_in 'Name', with: 'Stray Hearts Taos Animal Shelter'
     page.fill_in 'Address', with: '1200 Saint Frances Ln'
     page.fill_in 'City', with: 'Taos'
     page.fill_in 'State', with: 'NM'
     page.fill_in 'Zip', with: '87571'
+    click_button 'Create Shelter'
+
+    visit "/shelters"
 
     expect(page).to have_content('Stray Hearts Taos Animal Shelter')
     expect(page).to have_content(shelter_1.name)
