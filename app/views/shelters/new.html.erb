@@ -1,19 +1,18 @@
-<form action="/shelters" method="post">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <h2>Enter a new shelter:</h2>
-  <label for="name">Name:</label><br>
-  <input type='text' id="name" name='shelter[name]' placeholder="ASPA"/><br/>
+<%= form_tag "/shelters", method: :post do %>
+  <%= label_tag :name %><span>:</span><br>
+  <%= text_field_tag :name, nil, placeholder: 'ASPCA'%><br>
 
-  <label for="address">Address:</label><br>
-  <input type='text' id="address" name='shelter[address]' placeholder="123 Easy St"/><br/>
+  <%= label_tag :address %><span>:</span><br>
+  <%= text_field_tag :address, nil, placeholder: '424 E 92nd St'%><br>
 
-  <label for="city">City:</label><br>
-  <input type='text' id="city" name='shelter[city]' placeholder="New York City"/><br/>
+  <%= label_tag :city %><span>:</span><br>
+  <%= text_field_tag :city, nil, placeholder: 'New York City'%><br>
 
-  <label for="state">State:</label><br>
-  <input type='text' id="state" name='shelter[state]' placeholder="NY"/><br/>
+  <%= label_tag :state %><span>:</span><br>
+  <%= text_field_tag :state, nil, placeholder: 'NY'%><br>
 
-  <label for="zip">Zip:</label><br>
-  <input type='text' id="zip" name='shelter[zip]' placeholder="10001"/><br/>
-  <input type='submit' value="Create Shelter"/>
-</form>
+  <%= label_tag :zip %><span>:</span><br>
+  <%= text_field_tag :zip, nil, placeholder: '10128'%><br>
+
+  <%= submit_tag "Create Shelter" %>
+<% end %>
