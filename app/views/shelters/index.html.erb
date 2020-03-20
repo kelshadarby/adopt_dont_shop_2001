@@ -1,7 +1,7 @@
 <h1>All Shelters</h1>
 
 <% @shelters.each do |shelter| %>
-  <h3><a href="/shelters/<%= shelter.id %>"><%= shelter.name %></a></h3>
+  <h2><a href="/shelters/<%= shelter.id %>"><%= shelter.name %></a></h2>
 <% end %>
 
-<button onclick="location.href='shelters/new'" type="button">New Shelter</button>
+<a href='/shelters/new'>New Shelter</a>
