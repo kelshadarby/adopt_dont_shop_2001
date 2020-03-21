@@ -25,12 +25,3 @@ RSpec.describe "as a user", type: :feature do
     expect(pet_1.current_shelter).to eq(shelter_1.name)
   end
 end
-
-# As a visitor
-# When I visit '/pets'
-# Then I see each Pet in the system including the Pet's:
-# - image
-# - name
-# - approximate age
-# - sex
-# - name of the shelter where the pet is currently located
