@@ -14,7 +14,7 @@ RSpec.describe "as a user", type: :feature do
                                zip: "80301")
 
     visit "/shelters/#{shelter_1.id}"
-    click_button 'Delete'
+    click_link 'Delete Shelter'
 
     expect(page).to have_content(shelter_2.name)
     expect(page).to_not have_content(shelter_1.name)
