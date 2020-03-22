@@ -19,7 +19,7 @@ RSpec.describe "as a user", type: :feature do
 
     visit "/pets"
 
-    expect(page).to have_content(pet_1.image)
+    expect(page).to have_css("img[src*='#{pet_1.image}']")
     expect(page).to have_content(pet_1.name)
     expect(page).to have_content(pet_1.approximate_age)
     expect(page).to have_content(pet_1.sex)
