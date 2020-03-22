@@ -95,7 +95,7 @@ BE Mod 2 Week 1 Solo Project
 ## User Stories
 
 ```
-- [X] done
+[X] done
 
 User Story 1, Deploy your application to Heroku
 
@@ -199,7 +199,7 @@ and I am redirected to the shelter index page where I no longer see this shelter
 Pets can be adopted from the Shelter. Pets belong to a shelter.
 
 ```
-[ ] done
+[X] done
 
 User Story 7, Pet Index
 
