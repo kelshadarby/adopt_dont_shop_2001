@@ -14,7 +14,7 @@ RSpec.describe "as a user", type: :feature do
                        description: "My name is Spyro. I love long walks in the park.. or uhh... anywhere really... and hanging with my pals. I work hard and I play hard, even if I don't work hard. 'Swipe right' if you want an energetic pal to go on hikes with.",
                        approximate_age: "2 y/o",
                        sex: "Male",
-                       adoption_status: "Available",
+                       adoption_status: "Adoptable",
                        shelter_id: shelter_1.id)
 
     visit "/pets"
