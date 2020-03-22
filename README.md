@@ -94,10 +94,7 @@ BE Mod 2 Week 1 Solo Project
 
 ## User Stories
 
-
-- [X] done
-
-__User Story 1, Deploy your application to Heroku__
+- [X] __User Story 1, Deploy your application to Heroku__
 ```
 As a visitor or user of the site
 I will perform all user stories
