@@ -19,10 +19,10 @@ RSpec.describe "as a user", type: :feature do
                        shelter_id: shelter_1.id)
 
     pet_2 = Pet.create(image: "https://dogsofsf.com/wp-content/uploads/2016/05/IMG_1391.jpg",
-                       name: "Ivy",
-                       description: "Hi, I'm Ivy. Throw a ball for me and we will be best friends! I'm a Pembroke Welsh Corgi so running, hiking and climbing are not my forte, I prefer cuddles and treats. Come meet me! I'm sure we will be best friends in no time!",
-                       approximate_age: 1.5,
-                       sex: "Female",
+                       name: "Blitzen",
+                       description: "Hi, I'm Blitzen. Throw a ball for me and we will be best friends! I'm a Pembroke Welsh Corgi so running, hiking and climbing are not my forte, I prefer cuddles and treats. Come meet me! I'm sure we will be best friends in no time!",
+                       approximate_age: 4,
+                       sex: "Male",
                        adoption_status: "available",
                        shelter_id: shelter_1.id)
 
@@ -44,7 +44,7 @@ RSpec.describe "as a user", type: :feature do
                        name: "Marshmallow",
                        description: "Marshmallow, here. I'm a Samoyed, essentially just a big fluff. I'm playful and fun and enjoy romping in the snow. Like Elsa says 'the cold never bothered me anyway,' I'm a quick learner and love training of any kind! I'm looking for my forever home, come meet me!",
                        approximate_age: 3,
-                       sex: "Male",
+                       sex: "Female",
                        adoption_status: "available",
                        shelter_id: shelter_2.id)
 
@@ -52,36 +52,32 @@ RSpec.describe "as a user", type: :feature do
     visit "/shelter/#{shelter_1.id}/pets"
 
     #Shelter 1
-    expect(page).to have_content(shelter_1.name)
-
     expect(page).to have_css("img[src*='#{pet_1.image}']")
     expect(page).to have_content(pet_1.name)
-    expect(page).to have_content(pet_1.approximate_age)
-    expect(page).to have_content(pet_1.sex)
+    expect(page).to have_content("Approximate Age: #{pet_1.approximate_age}")
+    expect(page).to have_content("Sex: #{pet_1.sex}")
     expect(page).to_not have_content(pet_1.description)
     expect(page).to_not have_content(pet_1.adoption_status)
 
     expect(page).to have_css("img[src*='#{pet_2.image}']")
     expect(page).to have_content(pet_2.name)
-    expect(page).to have_content(pet_2.approximate_age)
-    expect(page).to have_content(pet_2.sex)
+    expect(page).to have_content("Approximate Age: #{pet_2.approximate_age}")
+    expect(page).to have_content("Sex: #{pet_2.sex}")
     expect(page).to_not have_content(pet_2.description)
     expect(page).to_not have_content(pet_2.adoption_status)
 
     # Shelter 2
-    expect(page).to_not have_content(shelter_2.name)
-
     expect(page).to_not have_css("img[src*='#{pet_3.image}']")
     expect(page).to_not have_content(pet_3.name)
-    expect(page).to_not have_content(pet_3.approximate_age)
-    expect(page).to_not have_content(pet_3.sex)
+    expect(page).to_not have_content("Approximate Age: #{pet_3.approximate_age}")
+    expect(page).to_not have_content("Sex: #{pet_3.sex}")
     expect(page).to_not have_content(pet_3.description)
     expect(page).to_not have_content(pet_3.adoption_status)
 
     expect(page).to_not have_css("img[src*='#{pet_4.image}']")
     expect(page).to_not have_content(pet_4.name)
-    expect(page).to_not have_content(pet_4.approximate_age)
-    expect(page).to_not have_content(pet_4.sex)
+    expect(page).to_not have_content("Approximate Age: #{pet_4.approximate_age}")
+    expect(page).to_not have_content("Sex: #{pet_4.sex}")
     expect(page).to_not have_content(pet_4.description)
     expect(page).to_not have_content(pet_4.adoption_status)
   end
