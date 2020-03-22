@@ -1,0 +1,8 @@
+<% @shelter_pets.pets.each do |pet| %>
+  <% if pet.adoption_status == "Available" %>
+    <img src="<%= pet.image %>" alt="Pictured: <%= pet.name %>">
+    <h2><%= pet.name %></h2>
+    <p>Approximate Age: <%= pet.approximate_age %></p>
+    <p>Sex: <%= pet.sex %></p>
+  <% end %>
+<% end %>
