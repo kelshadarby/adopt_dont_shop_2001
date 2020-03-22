@@ -20,7 +20,7 @@ RSpec.describe "as a user", type: :feature do
 
     pet_2 = Pet.create(image: "https://dogsofsf.com/wp-content/uploads/2016/05/IMG_1391.jpg",
                        name: "Blitzen",
-                       description: "Hi, I'm Blitzen. Throw a ball for me and we will be best friends! I'm a Pembroke Welsh Corgi so running, hiking and climbing are not my forte, I prefer cuddles and treats. Come meet me! I'm sure we will be best friends in no time!",
+                       description: "Hi, I'm Blitzen. Throw a ball for me and we will be best friends! I'm a Pembroke Welsh Corgi so running, hiking and climbing are not my forte, I prefer cuddles and treats. I can be your Christmas anytime! Come meet me! I'm sure we will be best friends in no time!",
                        approximate_age: 4,
                        sex: "Male",
                        adoption_status: "available",
@@ -34,7 +34,7 @@ RSpec.describe "as a user", type: :feature do
 
     pet_3 = Pet.create(image: "https://i.pinimg.com/originals/83/c7/1c/83c71cdc4efeeb1b27b524718f646b73.jpg",
                        name: "Cookie",
-                       description: "I'm Cookie. I'm a Nova Scotia Duck Tolling Terrier. I'm energetic and playful, a perfect companion for hikes or runs. I love playing fetch and swimming in lakes. Come say hi! I'm sure we'll be a great match!",
+                       description: "I'm Cookie. I'm a Nova Scotia Duck Tolling Terrier. I'm energetic and playful, a perfect companion for hikes or runs. I love playing fetch and swimming in lakes. I know lots of fun tricks like roll over, high-five and speak. Come say hi! I'm sure we'll be a great match!",
                        approximate_age: 1,
                        sex: "Female",
                        adoption_status: "available",
