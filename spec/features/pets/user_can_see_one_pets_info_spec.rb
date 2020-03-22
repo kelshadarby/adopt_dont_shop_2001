@@ -11,7 +11,7 @@ RSpec.describe "as a user", type: :feature do
 
     pet_1 = Pet.create(image: "https://i.pinimg.com/originals/a6/0f/7f/a60f7f075fcbe60956a31179c5eff08c.jpg",
                        name: "Spyro",
-                       description: "My name is Spyro. I love long walks in the park.. or uhh... anywhere really... and hanging with my pals. I work hard and I play hard, even if I don't work hard. 'Swipe right' if you want an energetic pal to go on hikes with.",
+                       description: "My name is Spyro. I'm a Belgian Malinois. I love long walks in the park.. or uhh... anywhere really... and hanging with my pals. I work hard and I play hard, even if I don't work hard. 'Swipe right' if you want an energetic pal to go on hikes with.",
                        approximate_age: "2 y/o",
                        sex: "Male",
                        adoption_status: "Available",
@@ -21,8 +21,8 @@ RSpec.describe "as a user", type: :feature do
                        name: "Blitzen",
                        description: "Hi, I'm Blitzen. Throw a ball for me and we will be best friends! I'm a Pembroke Welsh Corgi so running, hiking and climbing are not my forte, I prefer cuddles and treats. I can be your Christmas anytime! Come meet me! I'm sure we will be best friends in no time!",
                        approximate_age: "4 y/o",
-                       sex: "Male",
-                       adoption_status: "Available",
+                       sex: "Female",
+                       adoption_status: "On Hold",
                        shelter_id: shelter_1.id)
 
     visit "/pets/#{pet_1.id}"
