@@ -8,5 +8,6 @@ class PetsController < ApplicationController
   end
 
   def edit
+    @pet = Pet.find(params[:pet_id])
   end
 end
