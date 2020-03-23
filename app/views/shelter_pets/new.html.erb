@@ -1,0 +1,20 @@
+<h1>New Pet</h1>
+
+<%= form_tag "/shelters/:shelter_id/pets", method: :post do %>
+  <%= label_tag :image_url, "Image URL" %><span>:</span><br>
+  <%= text_field_tag :image_url, nil, placeholder: 'ASPCA'%><br>
+
+  <%= label_tag :name %><span>:</span><br>
+  <%= text_field_tag :name, nil, placeholder: '424 E 92nd St'%><br>
+
+  <%= label_tag :description, "Description (About Me)" %><span>:</span><br>
+  <%= text_field_tag :description, nil, placeholder: 'New York City'%><br>
+
+  <%= label_tag :approximate_age, "Approximate Age" %><span>:</span><br>
+  <%= text_field_tag :approximate_age, nil, placeholder: '2 y/o'%><br>
+
+  <%= label_tag :sex %><span>:</span><br>
+  <%= select_tag :sex, options_for_select(["Male", "Female"])%><br>
+
+  <%= submit_tag "Create Pet" %>
+<% end %>
