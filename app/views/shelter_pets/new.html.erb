@@ -2,13 +2,13 @@
 
 <%= form_tag "/shelters/:shelter_id/pets", method: :post do %>
   <%= label_tag :image_url, "Image URL" %><span>:</span><br>
-  <%= text_field_tag :image_url, nil, placeholder: 'ASPCA'%><br>
+  <%= text_field_tag :image_url, nil, placeholder: 'google.com/image_name.jpg'%><br>
 
   <%= label_tag :name %><span>:</span><br>
-  <%= text_field_tag :name, nil, placeholder: '424 E 92nd St'%><br>
+  <%= text_field_tag :name, nil, placeholder: 'Rover'%><br>
 
   <%= label_tag :description, "Description (About Me)" %><span>:</span><br>
-  <%= text_field_tag :description, nil, placeholder: 'New York City'%><br>
+  <%= text_field_tag :description, nil, placeholder: "I'm Rover, I'm a yellow lab who loves belly rubs."%><br>
 
   <%= label_tag :approximate_age, "Approximate Age" %><span>:</span><br>
   <%= text_field_tag :approximate_age, nil, placeholder: '2 y/o'%><br>
