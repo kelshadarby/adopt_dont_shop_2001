@@ -35,6 +35,5 @@ RSpec.describe "as a user", type: :feature do
     expect(page).to have_content("Sex: Male")
     expect(page).to_not have_content("Adoptable")
     expect(page).to_not have_content('Hi, I’m Rex. I’m a Basset Hound, I think walks are rather overrated. I prefer to sleep by the fire but I can bribed to get up if there is food. Come hang out by the fire with me.')
-    save_and_open_page
   end
 end
