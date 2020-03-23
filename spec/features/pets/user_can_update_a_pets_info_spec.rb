@@ -17,6 +17,8 @@ RSpec.describe "as a user", type: :feature do
                        adoption_status: "Adoptable",
                        shelter_id: shelter_1.id)
 
+    visit "/pets/#{pet_1.id}"
+
     click_link('Update Pet')
 
     expect(current_path).to eq("/pets/#{pet_1.id}/edit")
