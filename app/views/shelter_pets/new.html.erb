@@ -1,8 +1,8 @@
 <h1>New Pet</h1>
 
-<%= form_tag "/shelters/:shelter_id/pets", method: :post do %>
-  <%= label_tag :image_url, "Image URL" %><span>:</span><br>
-  <%= text_field_tag :image_url, nil, placeholder: 'google.com/image_name.jpg'%><br>
+<%= form_tag "/shelters/#{params[:shelter_id]}/pets", method: :post do %>
+  <%= label_tag :image, "Image URL" %><span>:</span><br>
+  <%= text_field_tag :image, nil, placeholder: 'google.com/image_name.jpg'%><br>
 
   <%= label_tag :name %><span>:</span><br>
   <%= text_field_tag :name, nil, placeholder: 'Rover'%><br>
