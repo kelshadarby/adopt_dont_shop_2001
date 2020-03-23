@@ -21,7 +21,7 @@ RSpec.describe "as a user", type: :feature do
                        name: "Blitzen",
                        description: "Hi, I'm Blitzen. Throw a ball for me and we will be best friends! I'm a Pembroke Welsh Corgi so running, hiking and climbing are not my forte, I prefer cuddles and treats. I can be your Christmas anytime! Come meet me! I'm sure we will be best friends in no time!",
                        approximate_age: "4 y/o",
-                       sex: "Male",
+                       sex: "Female",
                        adoption_status: "Adoptable",
                        shelter_id: shelter_1.id)
 
