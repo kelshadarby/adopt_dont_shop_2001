@@ -57,7 +57,7 @@ RSpec.describe "as a user", type: :feature do
                        shelter_id: shelter_2.id)
 
 
-    visit "/shelter/#{shelter_1.id}/pets"
+    visit "/shelters/#{shelter_1.id}/pets"
 
     #Shelter 1
     expect(page).to have_css("img[src*='#{pet_1.image}']")

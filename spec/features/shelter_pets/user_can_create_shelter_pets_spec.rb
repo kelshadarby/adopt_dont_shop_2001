@@ -9,10 +9,10 @@ RSpec.describe "as a user", type: :feature do
                                state: "CO",
                                zip: "80601")
 
-    visit "/shelter/#{shelter_1.id}/pets"
+    visit "/shelters/#{shelter_1.id}/pets"
     click_link('Create Pet')
 
-    expect(current_path).to eq("/shelter/#{shelter_1.id}/pets/new")
+    expect(current_path).to eq("/shelters/#{shelter_1.id}/pets/new")
 
     expect(page).to have_field('Image URL')
     expect(page).to have_field('Name')
@@ -27,7 +27,7 @@ RSpec.describe "as a user", type: :feature do
     select 'Male', from: 'Sex'
     click_button('Create Pet')
 
-    expect(current_path).to eq("/shelter/#{shelter_1.id}/pets")
+    expect(current_path).to eq("/shelters/#{shelter_1.id}/pets")
 
     expect(page).to have_css("img[src*='https://i.pinimg.com/originals/30/f7/eb/30f7eb5efeda4be553a9daa8cb2e90d8.jpg']")
     expect(page).to have_content('Rex')
