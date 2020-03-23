@@ -1,4 +1,4 @@
-<%= form_tag "/shelters/#{@pet.id}", method: :patch do %>
+<%= form_tag "/pets/#{@pet.id}", method: :patch do %>
 
   <%= label_tag :image, "Image URL" %><br>
   <%= text_field_tag :image, "#{@pet.image}"%><br>
@@ -9,7 +9,7 @@
   <%= label_tag :description %><br>
   <%= text_field_tag :description, "#{@pet.description}"%><br>
 
-  <%= label_tag :approximate_age %><br>
+  <%= label_tag :approximate_age, "Approximate Age" %><br>
   <%= text_field_tag :approximate_age, "#{@pet.approximate_age}"%><br>
 
   <%= label_tag :sex %><br>
