@@ -1,7 +1,7 @@
 <%= link_to 'View All Pets', "/pets" %><br>
 <%= link_to 'View All Shelters', "/shelters" %><br>
 
-<h3><a href="/shelters/<%= @shelter_pet.id %>">View <%= @shelter_pet.name %></a></h3><br/>
+<h3><%= link_to "View #{@shelter_pet.name}", "/shelters/#{@shelter_pet.id}" %></h3><br/>
 
 <% @shelter_pet.pets.each do |pet| %>
   <% if pet.adoption_status == "Adoptable" %>
