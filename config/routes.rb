@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get '/pets', to: 'pets#index'
   get '/pets/:pet_id', to: 'pets#show'
   get '/pets/:pet_id/edit', to: 'pets#edit'
-  patch '/pets/:id', to: 'pets#update'
+  patch '/pets/:pet_id', to: 'pets#update'
+  delete '/pets/:pet_id', to: 'pets#destroy'
 end
