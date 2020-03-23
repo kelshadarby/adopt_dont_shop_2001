@@ -15,7 +15,7 @@ RSpec.describe "as a user", type: :feature do
                        description: "My name is Spyro. I love long walks in the park.. or uhh... anywhere really... and hanging with my pals. I work hard and I play hard, even if I don't work hard. 'Swipe right' if you want an energetic pal to go on hikes with.",
                        approximate_age: "2 y/o",
                        sex: "Male",
-                       adoption_status: "Available",
+                       adoption_status: "Adoptable",
                        shelter_id: shelter_1.id)
 
     pet_2 = Pet.create(image: "https://dogsofsf.com/wp-content/uploads/2016/05/IMG_1391.jpg",
@@ -23,7 +23,7 @@ RSpec.describe "as a user", type: :feature do
                        description: "Hi, I'm Blitzen. Throw a ball for me and we will be best friends! I'm a Pembroke Welsh Corgi so running, hiking and climbing are not my forte, I prefer cuddles and treats. I can be your Christmas anytime! Come meet me! I'm sure we will be best friends in no time!",
                        approximate_age: "4 y/o",
                        sex: "Male",
-                       adoption_status: "Available",
+                       adoption_status: "Adoptable",
                        shelter_id: shelter_1.id)
 
     pet_5 = Pet.create(image: "https://media1.popsugar-assets.com/files/thumbor/fe_TEBbRM3ZlH2WR2P-pI5hbqSI/876x0:4381x3505/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/12/18/763/n/46902966/4759e2855dfa5f7c857892.88399573_/i/what-kind-health-problems-do-golden-retrievers-have.jpg",
@@ -31,7 +31,7 @@ RSpec.describe "as a user", type: :feature do
                        description: "Hi, I’m Rover, I’m a Golden Retriever. I love road trips, especially trips where we stop at lots of lakes along the way. Camping is also a blast, I enjoy sitting with my person, hopefully you, by the fire and roasting marshmallows. Come meet me today! I’m sure we will have lots of adventures together.",
                        approximate_age: "10 m/o",
                        sex: "Male",
-                       adoption_status: "On Hold",
+                       adoption_status: "Pending Adoption",
                        shelter_id: shelter_1.id)
 
     shelter_2 = Shelter.create(name: "Humane Society of Boulder Valley",
@@ -45,7 +45,7 @@ RSpec.describe "as a user", type: :feature do
                        description: "I'm Cookie. I'm a Nova Scotia Duck Tolling Terrier. I'm energetic and playful, a perfect companion for hikes or runs. I love playing fetch and swimming in lakes. I know lots of fun tricks like roll over, high-five and speak. Come say hi! I'm sure we'll be a great match!",
                        approximate_age: "1 y/o",
                        sex: "Female",
-                       adoption_status: "Available",
+                       adoption_status: "Adoptable",
                        shelter_id: shelter_2.id)
 
     pet_4 = Pet.create(image: "https://www.petmd.com/sites/default/files/samoyed-dog-picture-id181956647.jpg",
@@ -53,7 +53,7 @@ RSpec.describe "as a user", type: :feature do
                        description: "Marshmallow, here. I'm a Samoyed, essentially just a big fluff. I'm playful and fun and enjoy romping in the snow. Like Elsa says 'the cold never bothered me anyway,' I'm a quick learner and love training of any kind! I'm looking for my forever home, come meet me!",
                        approximate_age: "3 y/o",
                        sex: "Female",
-                       adoption_status: "Available",
+                       adoption_status: "Adoptable",
                        shelter_id: shelter_2.id)
 
 

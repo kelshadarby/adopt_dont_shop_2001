@@ -14,7 +14,7 @@ RSpec.describe "as a user", type: :feature do
                        description: "My name is Spyro. I'm a Belgian Malinois. I love long walks in the park.. or uhh... anywhere really... and hanging with my pals. I work hard and I play hard, even if I don't work hard. 'Swipe right' if you want an energetic pal to go on hikes with.",
                        approximate_age: "2 y/o",
                        sex: "Male",
-                       adoption_status: "Available",
+                       adoption_status: "Adoptable",
                        shelter_id: shelter_1.id)
 
     pet_2 = Pet.create(image: "https://dogsofsf.com/wp-content/uploads/2016/05/IMG_1391.jpg",
@@ -22,7 +22,7 @@ RSpec.describe "as a user", type: :feature do
                        description: "Hi, I'm Blitzen. Throw a ball for me and we will be best friends! I'm a Pembroke Welsh Corgi so running, hiking and climbing are not my forte, I prefer cuddles and treats. I can be your Christmas anytime! Come meet me! I'm sure we will be best friends in no time!",
                        approximate_age: "4 y/o",
                        sex: "Female",
-                       adoption_status: "On Hold",
+                       adoption_status: "Pending Adoption",
                        shelter_id: shelter_1.id)
 
     visit "/pets/#{pet_1.id}"
