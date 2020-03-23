@@ -1,3 +1,6 @@
+<%= link_to 'View All Pets', "/pets" %><br>
+<%= link_to 'View All Shelters', "/shelters" %><br>
+
 <%= form_tag "/shelters/#{@shelter.id}", method: :patch do %>
 
   <%= label_tag :name %><span>:</span><br>

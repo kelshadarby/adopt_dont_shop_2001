@@ -1,4 +1,6 @@
-<a href='/shelters'>All Shelters</a>
+<%= link_to 'View All Pets', "/pets" %><br>
+<%= link_to 'View All Shelters', "/shelters" %><br>
+<%= link_to 'View This Shelters Pets', "/shelters/#{@shelter.id}/pets" %><br>
 
 <h1><%= @shelter.name %></h1>
 <p><%= @shelter.address %></p>
