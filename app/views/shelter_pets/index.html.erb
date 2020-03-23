@@ -1,4 +1,4 @@
-<% @shelter_pets.pets.each do |pet| %>
+<% @shelter_pet.pets.each do |pet| %>
   <% if pet.adoption_status == "Adoptable" %>
     <img src="<%= pet.image %>" alt="Pictured: <%= pet.name %>">
     <h2><%= pet.name %></h2>
@@ -7,4 +7,6 @@
   <% end %>
 <% end %>
 
-<%# <%= link_to 'Create Pet', "/shelters/#{@shelter.id}/pets/new" %> %>
+<%# <a href="/shelters/<% binding.pry %>/pets/new">Create Pet</a> %>
+
+<%= link_to 'Create Pet', "/shelters/#{@shelter_pet.id}/pets/new" %>
